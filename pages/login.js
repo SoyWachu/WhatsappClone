@@ -7,13 +7,14 @@ export default function Login() {
   const signIn = () => {
     auth.signInWithPopup(provider).catch(alert);
   };
+
   return (
     <Container>
       <Head>
         <title>Login</title>
       </Head>
       <LoginContainer>
-        <Logo src="https://i.pinimg.com/originals/27/d2/68/27d26873930bb723a9e1ee6de6f5d761.png" />
+        <Logo src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png" />
         <Button onClick={signIn} variant="outlined">
           Sign in with Google
         </Button>
